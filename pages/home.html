@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="/asset/img/logo.png">
+
+    <meta name="description" content="GOODCHECKER.NET : CARD CHECKER - CVV CHECKER - CC CHECKER">
+    <meta name="keywords"
+        content="cvv checker,checker,cc checker,avs merchant,avs,avs checker,cc checker by avs,avs mismacth,custom charge,cc checker donate,donate,check card balance,bins checker,list tools,checker cc,credit card,debitcard,best checker cc,chck,chck.cc,check,check.cc,cc,cc live,donation,GOODCHECKER.NET">
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="/asset/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/asset/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/asset/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/asset/css/structure.css" rel="stylesheet" type="text/css">
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <link href="/asset/css/loader.css" rel="stylesheet" type="text/css">
+    <link href="/asset/plugins/sweetalerts/sweetalert2.min.css" rel="stylesheet" type="text/css">
+    <link href="/asset/plugins/sweetalerts/sweetalert.css" rel="stylesheet" type="text/css">
+    <link href="/asset/css/table-basic.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/asset/css/module-widgets.css">
+
+    <script src="/asset/plugins/sweetalerts/sweetalert2.min.js"></script>
+    <script src="/asset/js/jquery.min.js"></script>
+    <script src="/asset/js/popper.min.js"></script>
+    <script src="/asset/js/bootstrap.min.js"></script>
+    <script src="/asset/js/perfect-scrollbar.min.js"></script>
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="/asset/js/app.js"></script>
+    <script src="/asset/js/custom.js"></script>
+    <script src="/asset/js/snackbar.min.js"></script>
+    <script src="/asset/js/datatables.js"></script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+    <!-- Some JS & CSS Shit -->
+    <link href="/asset/css/login.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/asset/css/switches.css">
+    <link rel="stylesheet" type="text/css" href="/asset/css/checkbox-radio.css">
+</head>
+
+<body class="alt-menu sidebar-noneoverflow" cz-shortcut-listen="true">
+
+    <!--  BEGIN NAVBAR  -->
+    <div class="header-container fixed-top">
+        <header class="header navbar navbar-expand-sm expand-header">
+            <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg></a>
+
+            <ul class="navbar-item flex-row ml-auto">
+                <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-user-check">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="8.5" cy="7" r="4"></circle>
+                            <polyline points="17 11 19 13 23 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="dropdown-menu position-absolute e-animated e-fadeInUp"
+                        aria-labelledby="userProfileDropdown">
+                        <div class="user-profile-section">
+                            <div class="media mx-auto">
+                                <img src="/asset/img/logo.png" class="img-fluid mr-2" alt="avatar">
+                                <div class="media-body">
+                                    <h5>Faisal</h5>
+                                    <p>VIP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/logout">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-log-out">
+                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                    <polyline points="16 17 21 12 16 7"></polyline>
+                                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                                </svg> <span>Log Out</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <!--  END NAVBAR  -->
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container sidebar-closed sbar-open" id="container">
+        <div class="overlay show"></div>
+        <div class="cs-overlay"></div>
+        <div class="search-overlay"></div>
+
+        <!--  BEGIN SIDEBAR  -->
+        <div class="sidebar-wrapper sidebar-theme">
+            <nav id="sidebar">
+                <ul class="navbar-nav theme-brand flex-row  text-center">
+                    <li class="nav-item theme-logo">
+                        <a href="/">
+                            <img src="/asset/img/logo.png" class="navbar-logo" alt="logo">
+                        </a>
+                    </li>
+                    <li class="nav-item theme-text">
+                        <a href="/index.html" class="nav-link">GOODCHECKER.NET</a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled menu-categories ps" id="navbar">
+                    <li class="menu active"><a href="/pages/home.html" aria-expanded="true" class="dropdown-toggle">
+                            <div class=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg><span>HOME</span></div>
+                        </a></li>
+                    <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
+                                <circle cx="12" cy="12" r="10"></circle>
+                            </svg><span>MENU</span></div>
+                    </li>
+                    <li class="menu"><a href="#m287f0906f480500f5d3786710abc2476" data-toggle="collapse"
+                            aria-expanded="false" class="dropdown-toggle">
+                            <div class=""><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                                    stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                    class="css-i6dzq1">
+                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                                </svg><span>CARD CHECKER</span></div>
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg></div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="m287f0906f480500f5d3786710abc2476"
+                            data-parent="#navbar">
+                            <li class=""><a href="/pages/nocharge.html">NOCHARGE</a></li>
+                            <li class=""><a href="/pages/pre-auth.html">PRE-AUTH</a></li>
+                            <li class=""><a href="/pages/custom.html">CUSTOM</a></li>
+                            <li class=""><a href="/pages/avs.html">AVS</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="/pages/bins-checker.html" aria-expanded="false" class="dropdown-toggle">
+                            <div class=""><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                                    stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                    class="css-i6dzq1">
+                                    <polyline points="21 8 21 21 3 21 3 8"></polyline>
+                                    <rect x="1" y="3" width="22" height="5"></rect>
+                                    <line x1="10" y1="12" x2="14" y2="12"></line>
+                                </svg><span>BINS CHECKER</span></div>
+                        </a></li>
+                    <li class="menu"><a href="/pages/top-up.html" aria-expanded="false" class="dropdown-toggle">
+                            <div class=""><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                                    stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                    class="css-i6dzq1">
+                                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg><span>TOPUP</span></div>
+                        </a></li>
+                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                        <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                    </div>
+                    <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                        <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                    </div>
+                </ul>
+            </nav>
+
+        </div>
+        <!--  END SIDEBAR  -->
+
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+            <title>HOME - GOODCHECKER.NET</title>
+            <!-- Content Shit -->
+            <div class="layout-px-spacing layout-top-spacing">
+                <div class="modal fade" id="browserset" tabindex="-1" role="dialog" aria-labelledby="browsersetLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="browsersetLabel">BROWSER SETTING</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h5 class="modal-heading mb-4">FIREFOX ONLY : </h5>
+                                <p class="modal-text">
+                                </p>
+                                <ol>
+                                    <li class="mb-1">Go to '<b>about:config</b>' at navigation bar.</li>
+                                    <li class="mb-1">Click <b>Accept the Risk and Continue</b>, and edit the listed
+                                        values accordingly.</li>
+
+                                </ol>
+                                <ul>
+                                    <li class="mb-1">SET to <b>TRUE</b></li>
+                                    <ul>
+                                        <li class="mb-1"><b>network.dns.disableIPv6</b></li>
+
+                                    </ul>
+                                    <li class="mb-1">SET to <b>10000</b></li>
+                                    <ul>
+                                        <li class="mb-1"><b>network.http.pipelining.maxrequests</b></li>
+                                        <li class="mb-1"><b>network.http.max-connections</b> </li>
+                                        <li class="mb-1"><b>network.http.max-connections-per-server</b> </li>
+                                        <li class="mb-1"><b>network.http.max-persistent-connections-per-proxy</b> </li>
+                                        <li class="mb-1"><b>network.http.max-persistent-connections-per-server</b> </li>
+                                    </ul>
+
+                                </ul>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--div class="alert alert-arrow-left alert-icon-left alert-light-primary mb-4" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<svg xmlns="http://www.w3.org/2000/svg" data-dismiss="alert" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x close">
+				<line x1="18" y1="6" x2="6" y2="18"></line>
+				<line x1="6" y1="6" x2="18" y2="18"></line>
+			</svg>
+		</button>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+			<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+			<path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+		</svg>
+		<strong>Configure your browser for faster access this web ( <a href="javascript:void(0);" data-toggle="modal" data-target="#browserset"></strong><b class='text-primary'>FIREFOX SETTING</b></a>)
+	</div--->
+                <div class="row sales layout-top-spacing">
+
+                    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-activity-three">
+                            <div class="widget-heading">
+                                <h5 class="">INFORMATION</h5>
+                            </div>
+                            <div class="widget-content">
+                                <div class="mt-container mx-auto">
+                                    <div class="timeline-line">
+                                        <div class="item-timeline timeline-new">
+                                            <div class="t-dot" data-original-title="" title="">
+                                                <div class="t-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-check">
+                                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="t-content">
+                                                <div class="t-uppercontent">
+                                                    <h5>UPDATE SERVICE</h5>
+                                                    <span class="">2021-02-21</span>
+                                                </div>
+                                                - ADD CARD CHECKER CYBERSOURCE
+                                                <br>- UPDATE PRE-AUTH
+                                                <br>- UPDATE CUSTOM CHECKER
+                                            </div>
+                                        </div>
+                                        <div class="item-timeline timeline-new">
+                                            <div class="t-dot" data-original-title="" title="">
+                                                <div class="t-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-check">
+                                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="t-content">
+                                                <div class="t-uppercontent">
+                                                    <h5>MAINTENANCE COMPLETE</h5>
+                                                    <span class="">2021-01-06</span>
+                                                </div>
+                                                - FIX PRE-AUTH AND CUSTOM
+                                                <br>- UPGRADE SERVER
+                                                <br>- ADD 12 PROCESSOR
+                                                <br>- FOR VIP : 10 WORKER / CHECK
+                                                <br>- FOR PREMIUM: 3 WORKER / CHECK
+                                            </div>
+                                        </div>
+                                        <div class="item-timeline timeline-new">
+                                            <div class="t-dot" data-original-title="" title="">
+                                                <div class="t-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-check">
+                                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="t-content">
+                                                <div class="t-uppercontent">
+                                                    <h5>ADD SERVICE</h5>
+                                                    <span class="">2021-01-01</span>
+                                                </div>
+                                                <a href="/checker/start?id=extrap">CARD CHECKER EXTRAP</a>
+                                                <br>- SUPPORT GENERATE CARD / EXTRAP CARD
+                                                <br>- CVV NOT CHECK
+                                                <br>- VISA, MASTERCARD, AMERICAN EXPRESS AND DISCOVER.
+                                                <br>- 7/LIVE, 3/DIE.
+                                            </div>
+                                        </div>
+                                        <div class="item-timeline timeline-new">
+                                            <div class="t-dot" data-original-title="" title="">
+                                                <div class="t-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-check">
+                                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="t-content">
+                                                <div class="t-uppercontent">
+                                                    <h5>ADD SERVICE</h5>
+                                                    <span class="">2021-01-01</span>
+                                                </div>
+                                                <a href="/checker/start?id=custom">CARD CHECKER CUSTOM AUTH</a>
+                                                <br>- Check with Custom Amount ( $1 - $10.000 ).
+                                                <br>- VISA, MASTERCARD, AMERICAN EXPRESS AND DISCOVER.
+                                                <br>- 6/LIVE, 2/DIE.
+                                            </div>
+                                        </div>
+                                        <div class="item-timeline timeline-new">
+                                            <div class="t-dot" data-original-title="" title="">
+                                                <div class="t-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-check">
+                                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="t-content">
+                                                <div class="t-uppercontent">
+                                                    <h5>UPDATE MERCHANT</h5>
+                                                    <span class="">2020-12-31</span>
+                                                </div>
+                                                <a href="/checker/start?id=preauth1">CARD CHECKER PRE-AUTH 1</a>
+                                                <br>- AUTHORIZATION $1.
+                                                <br>- SUPPORT : VISA, MASTERCARD, AND AMERICAN EXPRESS.
+                                                <br>- DECLINE REASON INFO.
+                                                <br>- 4/LIVE, 2/DIE
+                                            </div>
+                                        </div>
+                                        <div class="item-timeline timeline-new">
+                                            <div class="t-dot" data-original-title="" title="">
+                                                <div class="t-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-check">
+                                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="t-content">
+                                                <div class="t-uppercontent">
+                                                    <h5>UPDATE SYSTEM</h5>
+                                                    <span class="">2020-12-12</span>
+                                                </div>
+                                                - For PREMIUM user checking card with 3 worker
+                                                <br>- For VIP user checking card with 10 Worker
+                                            </div>
+                                        </div>
+                                        <div class="item-timeline timeline-new">
+                                            <div class="t-dot" data-original-title="" title="">
+                                                <div class="t-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-check">
+                                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="t-content">
+                                                <div class="t-uppercontent">
+                                                    <h5>UPDATE MERCHANT</h5>
+                                                    <span class="">2020-12-11</span>
+                                                </div>
+                                                <a href="/checker/start?id=preauth2">CARD CHECKER PRE-AUTH 2</a>
+                                                <br>- AUTHORIZATION $0.XX BY CHASEPAYMENT.
+                                                <br>- SUPPORT : VISA, MASTERCARD, AMERICAN EXPRESS AND DISCOVER.
+                                                <br>- DECLINE REASON INFO.
+                                                <br>- 5/LIVE, 2/DIE
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-account-invoice-one">
+                            <div class="widget-heading">
+                                <h5 class="">Account Info</h5>
+                            </div>
+                            <div class="widget-content">
+                                <div class="invoice-box">
+                                    <div class="widget-content">
+                                        <div class="invoice-box">
+                                            <div class="acc-total-info">
+                                                <h5><img src="/asset/img/logo.png" alt="profile" width="90px"
+                                                        height="90px"></h5>
+                                                <p class="acc-amount">FAISAL</p>
+                                            </div>
+                                            <div class="inv-detail">
+                                                <div class="info-detail-1">
+                                                    <p>Level</p>
+                                                    <p>VIP</p>
+                                                </div>
+                                                <div class="info-detail-2">
+                                                    <p>Credit</p>
+                                                    <p>₵ 1055</p>
+                                                </div>
+                                                <div class="info-detail-2">
+                                                    <p>Email</p>
+                                                    <p>faisal@gmail.com</p>
+                                                </div>
+                                            </div>
+                                            <div class="inv-action">
+                                                <button type="button" class="btn btn-danger mt-2 mb-2 btn-block"
+                                                    data-dismiss="modal" data-toggle="modal" href="#changeAcode">CHANGE
+                                                    ACCESS CODE</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade register-modal" id="changeAcode" tabindex="-1" role="dialog"
+                        aria-labelledby="cAcode" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header" id="cAcode">
+                                    <h4 class="modal-title">SECURITY</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-x">
+                                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form method="post" action="" id="SettingSecurity">
+                                        <input type="hidden" name="csrf"
+                                            value="_-Ma_Ku5skDcbz-Ngtr2q7g-Oo75tlaX6aDq60fJtMdX5aMh8I3K_-Wu-7B3VWH6">
+                                        <div class="form-group">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-lock">
+                                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                            </svg>
+                                            <input type="text" class="form-control mb-2" name="code"
+                                                placeholder="Current Access Code" autocomplete="off" required="">
+                                        </div>
+                                        <div class="form-group">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-lock">
+                                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                            </svg>
+                                            <input type="text" class="form-control mb-2" name="newcode"
+                                                placeholder="New Access Code" autocomplete="off" minlength="6"
+                                                maxlength="15" required="">
+                                        </div>
+                                        <div class="form-group">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-lock">
+                                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                            </svg>
+                                            <input type="text" class="form-control mb-2" name="cnewcode"
+                                                placeholder="Confirm New Access Code" autocomplete="off" minlength="6"
+                                                maxlength="15" required="">
+                                        </div>
+                                        <button type="submit" id="btn-save"
+                                            class="btn btn-success mt-2 mb-2 btn-block">SAVE</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script defer="">
+                        $(function () {
+                            $('#SettingSecurity').submit(function (e) {
+                                e.preventDefault();
+
+                                $.ajax({
+                                    url: "/auth/process/change_access_code",
+                                    data: $(this).serialize(),
+                                    timeout: false,
+                                    type: 'POST',
+                                    dataType: 'JSON',
+                                    success: function (a) {
+                                        $("input").removeAttr("disabled", "disabled");
+                                        $("button").removeAttr("disabled", "disabled");
+                                        $("#btn-save").html('SAVE');
+                                        if (typeof a.data.csrf == "string") $("#SettingSecurity").find('input[type="hidden"][name="csrf"]').val(a.data.csrf);
+                                        if (a.status) {
+                                            $('#SettingModal').modal('hide');
+                                            swal("CHANGE SUCCESS !!", "" + a.data.message + "", "success").then(() => {
+                                                location.reload();
+
+                                            });
+
+                                        } else {
+                                            swal("FAILED !!", "" + a.data.message + "", "error");
+
+                                        }
+                                    },
+                                    error: function (a, b, c) {
+                                        $("input").removeAttr("disabled", "disabled");
+                                        $("button").removeAttr("disabled", "disabled");
+                                        $("#btn-save").html('SAVE');
+                                        swal("ERROR !!", "" + c + "", "success");
+
+                                    },
+                                    beforeSend: function () {
+                                        $("input").attr("disabled", "disabled");
+                                        $("#btn-save").html('LOADING ...');
+                                        $("button").attr("disabled", "disabled");
+
+                                    }
+                                });
+
+                                return false;
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        <!--  END CONTENT AREA  -->
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+    <script defer="">
+        $(document).ready(function () {
+            try {
+                App.init();
+
+            } catch (err) {
+
+            }
+        });
+    </script>
+</body>
+
+</html>

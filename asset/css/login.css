@@ -1,0 +1,306 @@
+/*
+	===============================
+			@Import	Function
+	===============================
+*/
+
+
+/*
+	===============================
+			@Import	Mixins
+	===============================
+*/
+
+html {
+	height: 100%;
+}
+
+body {
+		height: 100%;
+		overflow: auto;
+		margin: 0;
+		padding: 0;
+	}
+.background-login
+	{
+		background-color: #02072c;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='312' height='312' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23a60600' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%238f0000'%3E%3Ccircle cx='769' cy='229' r='6'/%3E%3Ccircle cx='539' cy='269' r='6'/%3E%3Ccircle cx='603' cy='493' r='6'/%3E%3Ccircle cx='731' cy='737' r='6'/%3E%3Ccircle cx='520' cy='660' r='6'/%3E%3Ccircle cx='309' cy='538' r='6'/%3E%3Ccircle cx='295' cy='764' r='6'/%3E%3Ccircle cx='40' cy='599' r='6'/%3E%3Ccircle cx='102' cy='382' r='6'/%3E%3Ccircle cx='127' cy='80' r='6'/%3E%3Ccircle cx='370' cy='105' r='6'/%3E%3Ccircle cx='578' cy='42' r='6'/%3E%3Ccircle cx='237' cy='261' r='6'/%3E%3Ccircle cx='390' cy='382' r='6'/%3E%3C/g%3E%3C/svg%3E");
+		background-attachment: fixed;
+	}
+
+.form-container {
+	display: flex;
+}
+
+.form-form {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.form-form .form-form-wrap {
+	max-width: 480px;
+	margin: 0 auto;
+	min-width: 311px;
+	min-height: 100%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-form .form-container {
+	align-items: center;
+	display: flex;
+	flex-grow: 1;
+	padding: .71428571rem 2.85714286rem;
+	width: 100%;
+	min-height: 100%;
+}
+
+.form-form .form-container h1 {
+	color: white;
+}
+
+.form-form .form-container .form-content {
+	display: block;
+	width: 100%;
+}
+
+.form-form .form-form-wrap .user-meta {
+	margin-bottom: 35px;
+}
+
+.form-form .form-form-wrap .user-meta img {
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	margin-right: 15px;
+	border: 4px solid white;
+}
+
+.form-form .form-form-wrap .user-meta div {
+	align-self: center;
+}
+
+.form-form .form-form-wrap .user-meta p {
+	font-size: 31px;
+	color: white;
+	margin-bottom: 0;
+}
+
+.form-form .form-form-wrap h1 .brand-name {
+	color: white;
+	font-weight: 600;
+}
+.form-form .form-form-wrap h1 .brand-name:hover {
+	color: red;
+}
+
+.form-form .form-form-wrap p.signup-link {
+	font-size: 14px;
+	color: white;
+	margin-bottom: 50px;
+}
+
+.form-form .form-form-wrap p.signup-link a {
+	color: white;
+	border-bottom: 1px solid;
+}
+
+.form-form .form-form-wrap form .field-wrapper.input {
+	position: relative;
+	padding: 11px 0 25px 0;
+	border-bottom: none;
+}
+
+.form-form .form-form-wrap form .field-wrapper.input:focus {
+	border: 1px solid white;
+}
+
+.form-form .form-form-wrap form .field-wrapper.toggle-pass p {
+	font-weight: 600;
+	color: white;
+	margin-bottom: 0;
+}
+
+.form-form .form-form-wrap form .field-wrapper .logged-in-user-name {
+	font-size: 37px;
+	color: #bfc9d4;
+}
+
+.form-form .form-form-wrap form .field-wrapper svg {
+	position: absolute;
+	top: 13px;
+	color: white;
+	fill:none;
+}
+
+.form-form .form-form-wrap form .field-wrapper.terms_condition {
+	margin-bottom: 20px;
+}
+
+.form-form .form-form-wrap form .field-wrapper.terms_condition label {
+	font-size: 14px;
+	color: white;
+	padding-left: 31px;
+	font-weight: 100;
+}
+
+.form-form .form-form-wrap form .field-wrapper.terms_condition a {
+	color: white;
+}
+
+.form-form .form-form-wrap form .field-wrapper input {
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 0;
+	min-width: 50px;
+	max-width: 635px;
+	width: 100%;
+	min-height: 36px;
+	background-color: transparent;
+	border: none;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+	color: white;
+	font-size: 16px;
+	border-bottom: 1px solid white;
+	padding: 0px 0 10px 35px;
+}
+
+.form-form .form-form-wrap form .field-wrapper input::-webkit-input-placeholder,
+.form-form .form-form-wrap form .field-wrapper input::-ms-input-placeholder,
+.form-form .form-form-wrap form .field-wrapper input::-moz-placeholder {
+	color: white;
+	font-size: 14px;
+}
+
+.form-form .form-form-wrap form .field-wrapper input:focus {
+	border-bottom: 1px solid red;
+	box-shadow: none;
+}
+
+.form-form .form-form-wrap form .field-wrapper.toggle-pass {
+	align-self: center;
+	text-align: left;
+}
+
+.form-form .form-form-wrap form .field-wrapper.toggle-pass .switch {
+	margin-bottom: 0;
+	vertical-align: sub;
+	margin-left: 7px;
+}
+
+.form-form .form-form-wrap form .field-wrapper button.btn {
+	align-self: center;
+	border-radius: 50px;
+	border-color: white;
+	background-color: transparent;
+	color: white;
+}
+.form-form .form-form-wrap form .field-wrapper button.btn:hover {
+	border-color: red;
+	color: red;
+}
+
+.form-form .form-form-wrap form .field-wrapper a.forgot-pass-link {
+	width: 100%;
+	color: white;
+	text-align: center;
+	display: block;
+	letter-spacing: 2px;
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+.form-form .form-form-wrap form .field-wrapper .n-chk .new-control-indicator {
+	top: 1px;
+	border: 1px solid white;
+	background-color: white;
+}
+
+.form-form .form-form-wrap form .field-wrapper .n-chk .new-control-indicator:after {
+	top: 52%;
+}
+
+.form-form .form-form-wrap form .field-wrapper.keep-logged-in {
+	margin-top: 60px;
+}
+
+.form-form .form-form-wrap form .field-wrapper.keep-logged-in label {
+	font-size: 14px;
+	color: white;
+	padding-left: 31px;
+	font-weight: 100;
+}
+
+.form-form .terms-conditions {
+	max-width: 480px;
+	margin: 0 auto;
+	color: white;
+	font-weight: 600;
+	margin-top: 90px;
+}
+
+.form-form .terms-conditions a {
+	color: white;
+}
+
+.form-image {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	position: fixed;
+	right: 0;
+	min-height: auto;
+	height: 100vh;
+	width: 50%;
+}
+
+.form-image .l-image {
+	background-image: url(../img/login.png);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position-x: center;
+	background-position-y: center;
+	pointer-events: none;
+}
+
+@media (max-width: 991px) {
+	.form-form {
+		width: 100%;
+	}
+	.form-form .form-form-wrap {
+		min-width: auto;
+	}
+	.form-image {
+		display: none;
+	}
+}
+
+@media (max-width: 575px) {
+	.form-form .form-form-wrap form .field-wrapper.toggle-pass {
+		margin-bottom: 28px;
+	}
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+	.form-form .form-form-wrap {
+		width: 100%;
+	}
+	.form-form .form-container {
+		height: 100%;
+	}
+}

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="/asset/img/logo.png">
+
+    <meta name="description" content="GOODCHECKER.NET : CARD CHECKER - CVV CHECKER - CC CHECKER">
+    <meta name="keywords"
+        content="cvv checker,checker,cc checker,avs merchant,avs,avs checker,cc checker by avs,avs mismacth,custom charge,cc checker donate,donate,check card balance,bins checker,list tools,checker cc,credit card,debitcard,best checker cc,chck,chck.cc,check,check.cc,cc,cc live,donation,GOODCHECKER.NET">
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="/asset/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/asset/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/asset/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/asset/css/structure.css" rel="stylesheet" type="text/css">
+    <link href="/asset/css/alert.css" rel="stylesheet" type="text/css">
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <link href="/asset/css/loader.css" rel="stylesheet" type="text/css">
+    <link href="/asset/plugins/sweetalerts/sweetalert2.min.css" rel="stylesheet" type="text/css">
+    <link href="/asset/plugins/sweetalerts/sweetalert.css" rel="stylesheet" type="text/css">
+    <link href="/asset/css/table-basic.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/asset/css/module-widgets.css">
+
+    <script src="/asset/plugins/sweetalerts/sweetalert2.min.js"></script>
+    <script src="/asset/js/jquery.min.js"></script>
+    <script src="/asset/js/popper.min.js"></script>
+    <script src="/asset/js/bootstrap.min.js"></script>
+    <script src="/asset/js/perfect-scrollbar.min.js"></script>
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="/asset/js/app.js"></script>
+    <script src="/asset/js/custom.js"></script>
+    <script src="/asset/js/snackbar.min.js"></script>
+    <script src="/asset/js/datatables.js"></script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+    <!-- Some JS & CSS Shit -->
+    <link href="/asset/css/login.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/asset/css/switches.css">
+    <link rel="stylesheet" type="text/css" href="/asset/css/checkbox-radio.css">
+</head>
+
+<body class="alt-menu sidebar-noneoverflow" cz-shortcut-listen="true">
+
+    <!--  BEGIN NAVBAR  -->
+    <div class="header-container fixed-top">
+        <header class="header navbar navbar-expand-sm expand-header">
+            <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg></a>
+
+            <ul class="navbar-item flex-row ml-auto">
+                <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-user-check">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="8.5" cy="7" r="4"></circle>
+                            <polyline points="17 11 19 13 23 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="dropdown-menu position-absolute e-animated e-fadeInUp"
+                        aria-labelledby="userProfileDropdown">
+                        <div class="user-profile-section">
+                            <div class="media mx-auto">
+                                <img src="/asset/img/logo.png" class="img-fluid mr-2" alt="avatar">
+                                <div class="media-body">
+                                    <h5>Faisal</h5>
+                                    <p>VIP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/logout">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-log-out">
+                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                    <polyline points="16 17 21 12 16 7"></polyline>
+                                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                                </svg> <span>Log Out</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <!--  END NAVBAR  -->
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container sidebar-closed sbar-open" id="container">
+        <div class="overlay show"></div>
+        <div class="cs-overlay"></div>
+        <div class="search-overlay"></div>
+
+        <!--  BEGIN SIDEBAR  -->
+        <div class="sidebar-wrapper sidebar-theme">
+            <nav id="sidebar">
+                <ul class="navbar-nav theme-brand flex-row  text-center">
+                    <li class="nav-item theme-logo">
+                        <a href="/">
+                            <img src="/asset/img/logo.png" class="navbar-logo" alt="logo">
+                        </a>
+                    </li>
+                    <li class="nav-item theme-text">
+                        <a href="index.html" class="nav-link"> GOODCHECKER.NET</a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled menu-categories ps" id="navbar">
+                    <li class="menu active"><a href="/pages/home.html" aria-expanded="true" class="dropdown-toggle">
+                            <div class=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg><span>HOME</span></div>
+                        </a></li>
+                    <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
+                                <circle cx="12" cy="12" r="10"></circle>
+                            </svg><span>MENU</span></div>
+                    </li>
+                    <li class="menu"><a href="#m287f0906f480500f5d3786710abc2476" data-toggle="collapse"
+                            aria-expanded="false" class="dropdown-toggle">
+                            <div class=""><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                                    stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                    class="css-i6dzq1">
+                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                                </svg><span>CARD CHECKER</span></div>
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg></div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="m287f0906f480500f5d3786710abc2476"
+                            data-parent="#navbar">
+                            <li class=""><a href="/pages/nocharge.html">NOCHARGE</a></li>
+                            <li class=""><a href="/pages/pre-auth.html">PRE-AUTH</a></li>
+                            <li class=""><a href="/pages/custom.html">CUSTOM</a></li>
+                            <li class=""><a href="/pages/avs.html">AVS</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="/pages/bins-checker.html" aria-expanded="false" class="dropdown-toggle">
+                            <div class=""><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                                    stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                    class="css-i6dzq1">
+                                    <polyline points="21 8 21 21 3 21 3 8"></polyline>
+                                    <rect x="1" y="3" width="22" height="5"></rect>
+                                    <line x1="10" y1="12" x2="14" y2="12"></line>
+                                </svg><span>BINS CHECKER</span></div>
+                        </a></li>
+                    <li class="menu"><a href="/pages/top-up.html" aria-expanded="false" class="dropdown-toggle">
+                            <div class=""><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                                    stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                    class="css-i6dzq1">
+                                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg><span>TOPUP</span></div>
+                        </a></li>
+                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                        <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                    </div>
+                    <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                        <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                    </div>
+                </ul>
+            </nav>
+
+        </div>
+        <!--  END SIDEBAR  -->
+
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+            <title>AVS - GOODCHECKER.NET</title>
+            <!-- Content Shit -->
+            <div class="layout-px-spacing">
+                <div class="row layout-top-spacing">
+                    <div class="col-lg-12 col-12 layout-spacing">
+                        <div class="alert alert-arrow-left alert-icon-left alert-light-primary mb-4" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <svg xmlns="http://www.w3.org/2000/svg" data-dismiss="alert" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-x close">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-bell">
+                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                            </svg>
+                            <strong>INFORMATION!</strong> <b>Check Card $1 by AVS (Address Verification Service).
+                                SUPPORT VISA, MASTERCARD AND
+                                AMEX</b>.
+                        </div>
+                        <div class="statbox widget box box-shadow">
+                            <div class="widget-header">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>CARD CHECKER</h4>
+                                    </div>
+                                    <div class="col-md-4 text-right">
+                                        <h4><span class="badge badge-info mr-2">5₵/Live</span><span
+                                                class="badge badge-info">2₵/Die</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content widget-content-area">
+                                <form method="post">
+                                    <input type="hidden" id="xCsrf" name="xCsrf"
+                                        value="MTgvUW10U3VBTllnZ1M1VHIzcUlLWStzVlJuQ21hSEZGaXdXOHF2Yyt2MWlqTU5DZHdqRTFBVndsZlJUWDRFSEU0b25nelJ4V1JjSjZoR2NPVHo0Qnc9PQ==">
+                                    <div class="form-group mb-4">
+                                        <button type="button" class="btn btn-dark mb-4 mr-2 btn-sm"
+                                            id="importFromFile">Import From
+                                            File</button>
+                                        <input type="file" id="fileInput" name="fileInput" style="display:none;">
+                                        <textarea class="form-control" name="resource" id="resource" placeholder="5105105105105100|12|25|123
+5105105105105100|12|25|123|ZIP CODE" rows="7"></textarea>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-primary mr-2 mb-2"
+                                            id="start">START</button>
+                                        <button type="button" class="btn btn-danger mr-2 mb-2" id="stop"
+                                            disabled="disabled">STOP</button>
+                                        <button type="button" class="btn btn-secondary mr-2 mb-2" data-toggle="modal"
+                                            href="#configuration"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-settings">
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                                <path
+                                                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                                </path>
+                                            </svg></button>
+                                        <a class="btn btn-dark mr-2 mb-2" href="javascript:void(0);"
+                                            data-clipboard-action="copy" data-clipboard-target="#ct" id="copyresult"
+                                            style="display: none;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-copy">
+                                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1">
+                                                </path>
+                                            </svg>
+                                            &nbsp;COPY RESULT
+                                        </a>
+                                        <div class="input-group input-group-sm mr-2 mb-2"
+                                            style="max-width: 150px;display: inline-flex;" hidden="">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">PROCESSOR</span>
+                                            </div>
+                                            <input type="number" class="form-control" placeholder="thread" id="thread"
+                                                name="thread" aria-label="thread" min="1" max="20" value="5">
+                                        </div>
+                                        <div class="input-group input-group-sm mr-2 mb-4"
+                                            style="max-width: 150px;display: inline-flex;" hidden="">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">AMOUNT</span>
+                                            </div>
+                                            <input type="number" class="form-control" placeholder="amount" id="amount"
+                                                name="amount" aria-label="amount" min="3" max="500" value="3">
+                                        </div>
+                                        <img id="loading" src="/asset/img/loading.gif" style="display: none;">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade register-modal" id="configuration" tabindex="-1" role="dialog"
+                    aria-labelledby="cAcode" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" id="cAcode">
+                                <h4 class="modal-title">Configuration</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="deleteDuplicate" checked="">
+                                    <label class="custom-control-label" for="deleteDuplicate">Remove Duplicate
+                                        Lines</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="resetResult">
+                                    <label class="custom-control-label" for="resetResult">Reset Result When Click
+                                        Start</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  END CONTENT AREA  -->
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+    <script defer="">
+        $(document).ready(function () {
+            try {
+                App.init();
+
+            } catch (err) {
+
+            }
+        });
+    </script>
+</body>
+
+</html>
